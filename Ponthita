@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - ปทุม บำรุงเอื้อ</title>
+    <!-- นำเข้าฟอนต์ Prompt จาก Google Fonts เพื่อความสวยงามอ่านง่าย -->
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Prompt', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 500px;
+            width: 100%;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .profile-section h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .profile-section p {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-card {
+            display: block;
+            text-decoration: none;
+            background-color: #ffffff;
+            color: #34495e;
+            padding: 16px 20px;
+            border-radius: 12px;
+            border: 2px solid #e0e6ed;
+            font-weight: 400;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* เอฟเฟกต์ตอนนำเมาส์ไปชี้ที่ปุ่ม */
+        .link-card:hover {
+            border-color: #3498db;
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .link-card:active {
+            transform: translateY(0);
+        }
+
+        /* ตกแต่งปุ่มเว็บไซต์ส่วนตัวให้โดดเด่นขึ้นเล็กน้อย */
+        .personal-site {
+            background-color: #2c3e50;
+            color: white;
+            border-color: #2c3e50;
+        }
+        
+        .personal-site:hover {
+            background-color: #1a252f;
+            border-color: #1a252f;
+            box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- ส่วนหัว (Header Profile) -->
+        <div class="profile-section">
+            <h1>พรธิตา บำรุงเอื้อ</h1>
+            <p>สาขาเทคโนโลยีธุรกิจดิจิทัล (DBT)<br>คณะเทคโนโลยีสารสนเทศและนวัตกรรมดิจิทัล<br>มหาวิทยาลัยนอร์ทกรุงเทพ</p>
+        </div>
+
+        <!-- ส่วนรวมลิงก์ผลงาน (Links) -->
+        <div class="links-container">
+            <a href="https://ponthita.github.io/modern-carousel/" target="_blank" class="link-card">
+                🖼️ Modern Carousel
+            </a>
+            
+            <a href="https://ponthita.github.io/BMI/" target="_blank" class="link-card">
+                ⚖️ BMI Calculator
+            </a>
+            
+            <a href="https://ponthita.github.io/openhouse/" target="_blank" class="link-card">
+                🏫 Open House
+            </a>
+            
+            <a href="https://ponthita.github.io/Game-Design-by-Ponthita/" target="_blank" class="link-card">
+                🎮 Web Business Game
+            </a>
+            
+            <a href="https://sites.google.com/northbkk.ac.th/ponthitabamrungaur/home?authuser=0" target="_blank" class="link-card personal-site">
+                🌐 Personal Website
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
